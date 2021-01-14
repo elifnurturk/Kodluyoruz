@@ -1,0 +1,91 @@
+ body {
+     width: 1450px;
+     height: 920px;
+ }
+ 
+ .logo {
+     position: absolute;
+     margin-left: 80px;
+     margin-top: 35px;
+ }
+ 
+ .menu a {
+     font-family: 'Roboto', sans-serif;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 18px;
+     text-decoration: none;
+     text-align: center;
+     color: #b1a1d8;
+ }
+ 
+ .menu {
+     position: absolute;
+     margin-left: 300px;
+     margin-top: 37px;
+ }
+ 
+ .menu .button {
+     display: block;
+     text-align: right;
+     margin-left: 250px;
+ }
+ 
+ .menu .button .button--2 {
+     font-weight: bolder;
+     color: white;
+     border-radius: 0.4em;
+     margin-right: 200px;
+     background-color: #7a62e6;
+     box-shadow: 0 0 1px 1px rgb(204, 204, 204);
+     padding: 17px;
+ }
+ 
+ .container {
+     width: 1200px;
+     padding-left: 0px;
+     padding-top: 50px;
+ }
+ 
+ .container img {
+     position: absolute;
+     right: 250px;
+     top: 100px;
+     height: 400px;
+ }
+ 
+ .title {
+     font-family: 'Ramaraja', serif;
+     font-size: 70px;
+     line-height: 70px;
+     padding-top: 75px;
+     left: 0;
+     color: rgb(2, 2, 8)
+ }
+ 
+ .text {
+     font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+     left: 0;
+     line-height: 30px;
+ }
+ 
+ .button--3 {
+     display: block;
+     text-align: center;
+     position: absolute;
+     width: 87.57px;
+     height: 27.82px;
+     left: 32.21px;
+     top: 19px;
+     font-family: Roboto;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 32px;
+     text-align: center;
+     letter-spacing: 0.02em;
+     color: #ffffff;
+     background-color: #645b8d;
+     padding: 22px;
+ }
