@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.metin {
+    color: rgb(172, 160, 160);
+    font-family: "Times New Roman";
+    font-weight: 8px;
+}
+
+.button {
+    position: absolute;
+    padding: 10px;
+    background: rgb(228, 72, 72);
+}

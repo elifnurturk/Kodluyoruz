@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <p class="metin">
+        TV’yi haber kanalında tutmak ve tüm gün sosyal medyayı inceliyo<br> Tüm tehlike haberlerini dinlemek tehlike algımızı arttırmaktadır.<br> Bu nedenle haberlerle ilgili güncellemeleri kontrol etmek için <br> belirli zamanlar belirlemek, olumsuz
+        bilgi bombardımanına uğramadan<br> bilgi alabilmenizi sağlar. Belirlenecek bir diğer sınır pandemiden <br> bahsetme sınırı olacaktır. Arkadaşlarınıza ve ailenize pandemi konusu <br> ortaya çıktığında zaman zaman konuyu değiştireceğinizi söyleyin.
+    </p>
+    <button>Dark theme</button>
+    <script type="text/javascript">
+        var color = ["black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", "black", "#FFFFFF", ];
+        var i = 0;
+        document.querySelector("button").addEventListener("click", function() {
+            i = 1 < 100 ? ++i : 0;
+            document.querySelector("body").style.background = color[i]
+        });
+    </script>
+</body>
+
+</html>
