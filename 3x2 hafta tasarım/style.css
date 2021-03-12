@@ -1,0 +1,470 @@
+* {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+button,a {
+    font-family: "Red Hat Display",
+    sans-serif;
+    color: #035755;
+}
+
+body {
+    background: linear-gradient(245deg, #fff6f8 9.91%, #FFFFFF 88.82%);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header,footer,
+.logo-container,
+.nav-links,
+.presentation,
+.introduction,
+.contagion,
+.contagion-img,
+.symptomps,
+.precautions,
+.map,
+.subscribe,.footer-links{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #035755;
+}
+
+header,footer{
+    width: 75%;
+    height: 13vh;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: .5em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.nav-links,.footer-links{
+    justify-content: flex-end;
+    list-style: none;
+}
+.nav-link,.contact,.footer-link,.footer-links img{
+    margin-left: 2rem;
+    text-decoration: none;
+}
+.active {
+    color: #fa5652;
+}
+.nav-link:hover ,.footer-link:hover{
+    color: #FA5652;
+}
+.active::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50% 50%;
+    width: 5px;
+    height: 5px;
+    margin-top: 4px;
+    margin-left: 4rem;
+    background-color: #fb4c47;
+}   
+
+.contact {
+    color: #fa5652;
+    height: auto;
+    width: auto;
+    border: 2px solid #fa5652;
+    padding: 0.7rem 2rem;
+    border-radius: 5rem;
+}
+
+/* MAIN */
+
+.presentation{
+    /* width: 75%; */
+    margin:0 auto;
+    justify-content: flex-end;
+}
+.introduction{
+    margin-left: 13%;
+}
+.intro-text h2,
+.about-text,
+.contagion-text h2,
+.symptomps-text h2,
+.precautions-text h2{
+    margin:  0.5rem 0; 
+    color: #fa5652;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.intro-text h1,
+.contagion-text h1,
+.symptomps-text h1,
+.subscribe-text h1{
+    margin:  0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #035755;
+    font-weight: bold;
+}
+.intro-text p,
+.intro-text p,
+.contagion-text p{
+    margin: 1.5rem 0;
+    color: #4B4F51;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.illus-1{
+    height: auto;
+    width: 55vw;
+}
+
+.cta-select{
+    background-color: #FA5652;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    font-weight: 900;
+    border-radius: 4rem 4rem;
+    padding: 1.2rem 3rem;
+}
+
+@media (max-width:800px) {
+    * {
+        font-size: 10px;
+    }
+
+    .presentation {
+        margin-left: 0rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    .contact,.footer-links img{
+        display: none;
+    }
+
+    .illus-1 {
+        margin: 2rem;
+    }
+}
+
+/* ABOUT */
+.sec-2{
+    display: flex;
+}
+.about{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    /* margin: 0 auto; */
+    /* justify-content: space-between; */
+}
+.illus-2 {
+    width: 50vw;
+    height: auto;
+}
+.about-text{
+    width: 35vw;
+}
+.about-text h2,.contagion-card h2,.precautions-text h2{
+    color: #FA5652;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: 900;
+}
+
+.about-text h1,
+.precautions-text h1{
+    font-size: 2.5rem;
+    color: #035755;
+    margin: 0.5rem 0;
+}
+.about-text p,
+.contagion-card p,
+.contagion-text p,
+.symptomps-text p,
+.precautions-text p,
+.precau-card p {
+    color: #4B4F51;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.cta-select-2{
+    margin: 2em 0;
+    padding: 1em 3em;
+    border-radius: 4em 4em;
+    border: 0;
+    color: #FA5652;
+    font-weight: 900;
+    background-color: #f8cccb;
+    outline: none;
+}
+#intro-svg-1{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 35rem;
+}
+#intro-svg-2{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 86%;
+}
+
+/* Contagion */
+.contagion,
+.symptomps,
+.precautions,
+.map,
+.subscribe{
+    text-align: center;
+    flex-direction: column;
+}
+
+.contagion-text,
+.symptomps-text,
+.precautions-text{
+    width: 50%;
+}
+.contagion-img{
+    width: 75%;
+    align-content: center;
+    justify-content: space-between;
+}
+.contagion-card {
+    margin: 2rem;
+    padding: 4em 2em ;
+    height: auto;
+    max-height: 70vh;
+    width: 25vw;
+    max-width: 35vw;
+    background-color: white;
+    box-shadow: 0px 0.3rem 5rem rgba(0, 0, 0, 0.08);
+    border: 0px solid blue;
+    border-radius: 1rem;
+}
+.contagion-card:hover {
+    border-bottom: 3px solid #FA5652;
+    transition: 0.3s;
+}
+.contagion-card h2,
+.precau-card h1{
+    color: #035755;
+    font-size: 1.6rem;
+}
+.cont-img{
+    align-items: center;
+    width: 15vw;
+    height: auto;
+}
+#path1470{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -41%;
+    z-index: -1;
+    width: 12vw;
+}
+@media (max-width:800px){
+    .contagion-img{
+        flex-direction: column;
+    }
+    .contagion-card{
+        width: 70vw;
+        max-width: 80vw;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .cont-img{
+        align-items: center;
+    }
+}
+
+.symptomps,.precautions,footer{
+    margin-top: 10vh;
+}
+
+
+/* symptomps */
+.symptomps-img{
+    width: 60vw;
+    height: auto;
+    margin: 0rem auto;
+}
+#path1762{
+    position:absolute;
+    margin-left: -45%;
+    margin-top: 40%;
+    z-index: -1;
+}
+#path1764 {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -15%;
+    z-index: -1;
+}
+
+
+/* precautions */
+.precautions-img{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.precau-card {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    /* border: 2px greenyellow solid; */
+}
+.precau-card img{
+    width: 30vw;
+    height: auto;
+}
+.precau-card-text{
+    width: 50vw;
+    height: auto;
+}
+.precau-card p{
+    max-width: 30vw;
+}
+.precau-card h2{
+    padding: 0.5rem;
+    /* position: relative; */
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.75rem;
+    color: #FA5652;
+    margin: 2rem;
+    margin-top:-8%;
+    background-color: rgb(250, 86, 82, 0.15);
+    border-radius: 50%;
+}
+
+
+/* MAP */
+.map .bottom{
+    position: absolute;
+    padding-top: 5vh;
+    z-index: -1;
+    margin-left: -8vw;
+    width: 70vw;
+    height: auto;
+}
+.map .top {
+    /* position: relative; */
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+}
+
+/* SUBSCribe */
+.subscribe-text{
+    width: 40vw;
+    line-height: 5rem;
+}
+.subscribe-text h1{
+    font-size: 3rem;
+    color: #0C6C44;
+    font-weight: 900;
+    text-transform: none;
+}
+#lname{
+    position: relative;
+    width: 40vw;
+    height: auto;
+    box-sizing: border-box;
+    border:  0px solid;
+    box-shadow: 0rem 0.5rem 5rem rgba(0, 0, 0, 0.16);   
+    border-radius: 2.5rem;
+    padding: 2rem;    
+    text-transform: lowercase;
+    z-index: -1;
+}
+.send{
+    position: absolute;
+    margin: 0.6rem;
+    margin-left: -13%;
+    padding: 2vh 2vh;
+    height: auto ;
+    width: 12vw;
+    padding: 1.5rem;
+}
+
+
+/* FOOTER */
+.foot-note{
+    color: #415E56;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+#path1470-G{
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    margin-left:-45.2% ;
+    margin-top:30% ;
+}
+#path1470GF{
+    /* position: absolute   ; */
+    margin-left: 10%;
+    margin-top: -20%;
+    width: 10vw;
+    height: auto;
+}
+#path14702{
+    position: absolute;
+    height: auto;
+    width: 15vw;
+    margin-left: 72%;
+    margin-top: 10%;
+}
+#map-i-1{
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -5%;
+}
+#map-i-2 {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    margin-left: 43%;
+}
+
+@media (max-width:800px){
+    .precau-card-text{
+        margin: 5rem;
+    }
+    .precau-card{
+    margin-top: 5%;
+     text-align: left;
+     width: 100%;
+    }
+    .precau-img{
+        width: 50vw;
+        height: auto;
+        position: absolute;
+        /* opacity: 0.3; */
+    }
+    #intro-svg-1{display: none;}
+    #intro-svg-2{
+        display: none;
+    }
+}
