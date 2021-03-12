@@ -1,0 +1,16 @@
+﻿#uyelik_formu {
+    padding: 10px;
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+label {
+    float: left;
+    width: 150px;
+}
+
+input {
+    float: left;
+    width: 150px;
+}

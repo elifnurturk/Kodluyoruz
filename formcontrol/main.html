@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Control</title>
+</head>
+
+<body>
+    <div id="uyelik_formu">
+        <form name="uye_formu" action="jscript_form_kontrolu_post.php" onsubmit="return isValid(this)" method="post">
+            <label> İsim:</label>
+            <input type="text" name="name">
+            <br>
+            <label>Soyisim:</label>
+            <input type="text" name="surname">
+            <br>
+            <label>Kullanıcı Adınız:</label>
+            <input type="text" id="userName" placeholder="@username" disabled>
+            <br>
+            <label>Şifre:</label>
+            <input type="password" name="sifre1">
+            <br>
+            <label>Şifre (Tekrar):</label>
+            <input type="password" name="sifre2">
+            <br>
+            <label>E-Mail:</label>
+            <input type="text" name="email">
+            <br>
+            <input type="submit" id="btn" value="Kaydet!">
+        </form>
+    </div>
+    <script>
+        function isValid(frm) {
+            var name = frm.name.value;
+            var surname = frm.surname.value;
+            var userName = document.getElementById("userName");
+            var sifre1 = frm.sifre1.value;
+            var sifre2 = frm.sifre2.value;
+            var email = frm.email.value;
+            var atpos = email.indexOf("@");
+            var dotpos = email.lastIndexOf(".");
+            name.addEventListener("keyup", function() {
+
+                first = name.value;
+                userName.value = ("@" + first + last).toLowerCase();
+
+            });
+
+            surname.addEventListener("keyup", function() {
+
+                last = surname.value;
+                userName.value = ("@" + first + last).toLowerCase();
+
+            });
+            if (sifre1 == null || sifre == "" || sifre.length < 8) {
+                alert("Şifre 8 karakterden az olamaz");
+                return false;
+            }
+            if (sifre1 == null || sifre1 == "" || sifre2 == null || sifre2 == "") {
+                alert("Lütfen boş bırakmayınız.");
+                return false;
+            }
+            if (!(sifre1 == sifre2)) {
+                alert("Şifreler farklı");
+                return false;
+            }
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+                alert("Geçerli bir email adresi giriniz");
+                return false;
+            }
+            return true;
+
+        }
+    </script>
+</body>
+
+</html>
